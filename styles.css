@@ -180,8 +180,7 @@ a:hover {
 
 .Clans {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 100%;
   padding: 10px;
