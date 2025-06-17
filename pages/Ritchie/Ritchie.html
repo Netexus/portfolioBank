@@ -21,59 +21,85 @@
     <header>
       <!--COMPONENTE NAVBAR-->
       <nav class="navbar">
-        <div class="navbar__container">
-          <div class="navbar__brand">
-            <a href="../../index.html">
-              <img
-                id="theme-image"
-                class="navbar__img"
-                src="../../src/assets/icons/icon_complete.ico"
-                alt="Logo Riwi"
-              />
-            </a>
-          </div>
-
-          <ul class="navbar__menu">
-            <li><a class="dropdown__link" href="../../index.html">Home</a></li>
-
-            <li class="navbar__item dropdown">
-              <a class="dropdown__link" href="#">Sede Medellín</a>
-              <ul class="dropdown__menu">
-                <li>
-                  <a
-                    class="dropdown__link"
-                    href="../Berners_Lee/Berners_Lee.html"
-                    >Berners Lee</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="../Ritchie/Ritchie.html"
-                    >Ritchie</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown__link" href="../Tesla/Tesla.html"
-                    >Tesla</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown__link"
-                    href="../Van_Rossum/Van_Rossum.html"
-                    >Van Rossum</a
-                  >
-                </li>
-              </ul>
-            </li>
-
-            <li class="navbar__item dropdown">
-              <a class="dropdown__link" href="#">Sede Barranquilla</a>
-              <ul class="dropdown__menu">
-                <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
-              </ul>
-            </li>
-          </ul>
+      <div class="navbar__container">
+        <div class="navbar__brand">
+          <a href="../../index.html">
+            <img id="theme-image" class="navbar__img" src="../../src/assets/icons/icon_complete.ico" alt="Logo Riwi" />
+          </a>
         </div>
+
+        <!-- Botón hamburguesa -->
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Menú">
+          ☰
+        </button>
+
+
+        <ul class="navbar__menu" id="navbar-menu">
+          <li><a class="dropdown__link" href="../../index.html">Home</a></li>
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
+            <ul class="dropdown__menu">
+              <li>
+                <a class="dropdown__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Ritchie/Ritchie.html">Ritchie</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Tesla/Tesla.html">Tesla</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Van_Rossum/Van_Rossum.html">Van Rossum</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
+            <ul class="dropdown__menu">
+              <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <!--Navbar Mobile-->
+      <nav class="navbar__mobile">
+        <ul class="navbar__menu" id="navbar-menu">
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
+            <ul class="dropup__menu left">
+              <li>
+                <a class="dropdown__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Ritchie/Ritchie.html">Ritchie</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Tesla/Tesla.html">Tesla</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Van_Rossum/Van_Rossum.html">Van Rossum</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navbar__logo">
+            <a href="../../index.html">
+              <img id="theme-image" class="navbar__img" src="../../src/assets/icons/icon_complete.ico" alt="Logo Riwi" />
+            </a>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
+            <ul class="dropup__menu right">
+              <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </header>
     <!--FIN NAVBAR-->
@@ -102,7 +128,7 @@
                 <img
                   src=""
                   alt="Foto de Susana Silva Vallejo"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Susana Silva Vallejo.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -124,7 +150,7 @@
                 <img
                   src=""
                   alt="Foto de Samuel Rosero Alvarez"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Samuel Rosero Alvarez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -145,7 +171,7 @@
                 <img
                   src=""
                   alt="Foto de Isabella Pulgarín Muñoz "
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Isabella Pulgarin Muñoz.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -166,7 +192,7 @@
                 <img
                   src=""
                   alt="Foto de Emmanuel Rendon Goez"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Emmanuel Rendon Goez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -187,7 +213,7 @@
                 <img
                   src=""
                   alt="Foto de Juan Camilo Sanchez Mendez "
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Juan Camilo Sanchez Mendez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -208,7 +234,7 @@
                 <img
                   src=""
                   alt="Foto de Samuel Quintero Sanchez"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/samuel quintero sanchez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -229,7 +255,7 @@
                 <img
                   src=""
                   alt="Foto de Angélica María Cuervo Marin "
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Angelica Maria Cuervo Marin.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -250,7 +276,7 @@
                 <img
                   src=""
                   alt="Foto de Andres Restrepo Ochoa"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Andres Restrepo Ochoa.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -271,7 +297,7 @@
                 <img
                   src=""
                   alt="Foto de Jefferson Giraldo Posada"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Jefferson Giraldo Posada.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -292,7 +318,7 @@
                 <img
                   src=""
                   alt="Foto de José Tomás Loaiza Rodríguez"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Jose Tomas Loaiza Rodriguez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -313,7 +339,7 @@
                 <img
                   src=""
                   alt="Foto de Andres Felipe Marin Patiño"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Andres Felipe Marin Patiño.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -334,7 +360,7 @@
                 <img
                   src=""
                   alt="Foto de Emmanuel Pérez Martínez"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Emmanuel Perez Martinez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -355,7 +381,7 @@
                 <img
                   src=""
                   alt="Foto de Ian Aguirre Gallego"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Ian Aguirre Gallego.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -376,7 +402,7 @@
                 <img
                   src=""
                   alt="Foto de Esteban Gonzalez Sanchez"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Esteban Gonzalez Sanchez.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -397,7 +423,7 @@
                 <img
                   src=""
                   alt="Foto de Juan Esteban Sepulveda"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Juan Esteban Sepulveda.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -418,7 +444,7 @@
                 <img
                   src=""
                   alt="Foto de Cristian Chaverra Colorado"
-                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                  onerror="this.src='../../src/assets/images/Ritchie/Cristian chaverra colorado.jpg'"
                 />
               </div>
               <div class="student__info">
@@ -433,6 +459,69 @@
                 </a>
               </div>
             </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Carlos Enrique Tangarife Pulgarín"
+                  onerror="this.src='../../src/assets/images/Ritchie/Carlos Enrique Tangarife Pulgarin.jpg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Carlos Enrique Tangarife Pulgarín</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://blakecassidy.github.io/Prueba-Desempeno-M2/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+
+            <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Juan Jose Restrepo Osorio"
+                  onerror="this.src='../../src/assets/images/Ritchie/Juan Jose Restrepo Osorio.jpg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Juan Jose Restrepo Osorio</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="https://juan-restrepo-dev.github.io/-portfolio/"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article>
+            
+            <!-- <article class="student__card">
+              <div class="student__image">
+                <img
+                  src=""
+                  alt="Foto de Name"
+                  onerror="this.src='../../src/assets/images/placeholder_image.svg'"
+                />
+              </div>
+              <div class="student__info">
+                <h3 class="student__name">Name</h3>
+                <p class="student__role">Coder Riwi</p>
+                <a
+                  href="link"
+                  class="student__portfolio"
+                  target="_blank"
+                >
+                  Ver Portafolio
+                </a>
+              </div>
+            </article> -->
 
             <!--AGREGAR MÁS ESTUDIANTES-->
           </div>
@@ -492,5 +581,6 @@
         </div>
       </section>
     </footer>
+    <script src="../../src/scripts/menu-hamburguer.js"></script>
   </body>
 </html>

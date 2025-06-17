@@ -25,11 +25,17 @@
           </a>
         </div>
 
-        <ul class="navbar__menu">
+        <!-- Botón hamburguesa -->
+        <button id="navbar-toggle" class="navbar__toggle" aria-label="Menú">
+          ☰
+        </button>
+
+
+        <ul class="navbar__menu" id="navbar-menu">
           <li><a class="dropdown__link" href="../../index.html">Home</a></li>
 
           <li class="navbar__item dropdown">
-            <a class="dropdown__link" href="#">Sede Medellín</a>
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
             <ul class="dropdown__menu">
               <li>
                 <a class="dropdown__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a>
@@ -47,7 +53,7 @@
           </li>
 
           <li class="navbar__item dropdown">
-            <a class="dropdown__link" href="#">Sede Barranquilla</a>
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
             <ul class="dropdown__menu">
               <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
             </ul>
@@ -55,6 +61,43 @@
         </ul>
       </div>
     </nav>
+
+    <!--Navbar Mobile-->
+      <nav class="navbar__mobile">
+        <ul class="navbar__menu" id="navbar-menu">
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Medellín</a>
+            <ul class="dropup__menu left">
+              <li>
+                <a class="dropdown__link" href="../Berners_Lee/Berners_Lee.html">Berners Lee</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Ritchie/Ritchie.html">Ritchie</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Tesla/Tesla.html">Tesla</a>
+              </li>
+              <li>
+                <a class="dropdown__link" href="../Van_Rossum/Van_Rossum.html">Van Rossum</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="navbar__logo">
+            <a href="../../index.html">
+              <img id="theme-image" class="navbar__img" src="../../src/assets/icons/icon_complete.ico" alt="Logo Riwi" />
+            </a>
+          </li>
+
+          <li class="navbar__item dropdown">
+            <a class="dropdown__link toggle-submenu" href="#">Sede Barranquilla</a>
+            <ul class="dropup__menu right">
+              <li><a class="dropdown__link" href="#">En desarrollo...</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
   </header>
   <!--FIN NAVBAR-->
 
@@ -79,7 +122,7 @@
           <article class="student__card student__card--tutor">
             <div class="student__image">
               <img src="" alt="Foto Luis Fernando Martínez"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Luis Fernando Martinez Cervantes.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Luis Fernando Martínez</h3>
@@ -93,7 +136,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Daniel González Ortiz"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Daniel Gonzalez Ortiz.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Daniel González Ortiz</h3>
@@ -107,7 +150,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Yeferson Alejandro García Marín"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Yeferson Alejandro Garcia Marin.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Yeferson Alejandro García Marín</h3>
@@ -121,7 +164,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Cristian David Diaz Gallego"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Cristian David Diaz Gallego.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Cristian David Diaz Gallego</h3>
@@ -135,7 +178,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Mateo Monsalve Ortega"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Mateo Monsalve Ortega.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Mateo Monsalve Ortega</h3>
@@ -149,7 +192,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Ricardo Carmona Montaño "
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Ricardo Carmona Montaño.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Ricardo Carmona Montaño</h3>
@@ -163,7 +206,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Mariana Restrepo Acevedo"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Mariana Restrepo Acevedo.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Mariana Restrepo Acevedo</h3>
@@ -177,7 +220,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Karina Andrea Henao Zuleta"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/Karina Andrea Henao Zuleta.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">Karina Andrea Henao Zuleta</h3>
@@ -191,7 +234,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto David Palacios Padilla"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'" />
+                onerror="this.src='../../src/assets/images/Tesla/David Palacios Padilla.jpg'" />
             </div>
             <div class="student__info">
               <h3 class="student__name">David Palacios Padilla</h3>
@@ -206,7 +249,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Luis Fernando Rodriguez Lopez"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
+                onerror="this.src='../../src/assets/images/Tesla/Luis Fernando Rodriguez Lopez.jpg'">
             </div>
             <div class="student__info">
               <h3 class="student__name">Luis Fernando Rodriguez Lopez</h3>
@@ -220,7 +263,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Juan David Olaya Restrepo"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
+                onerror="this.src='../../src/assets/images/Tesla/Juan David Olaya Restrepo.jpg'">
             </div>
             <div class="student__info">
               <h3 class="student__name">Juan David Olaya Restrepo</h3>
@@ -234,7 +277,7 @@
           <article class="student__card">
             <div class="student__image">
               <img src="" alt="Foto Estefania Andrea Castro Quintana"
-                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
+                onerror="this.src='../../src/assets/images/Tesla/Estefania Andrea Castro Quintana.jpg'">
             </div>
             <div class="student__info">
               <h3 class="student__name">Estefania Andrea Castro Quintana</h3>
@@ -245,19 +288,47 @@
             </div>
           </article>
 
-          <!-- <article class="student__card">
+          <article class="student__card">
             <div class="student__image">
-              <img src="" alt="Foto Name" onerror="this.src='../../src/assets/images/placeholder_image.svg'">
+              <img src="" alt="Foto Daniel Tapias Villamil"
+                onerror="this.src='../../src/assets/images/placeholder_image.svg'">
             </div>
             <div class="student__info">
-              <h3 class="student__name">Coder name</h3>
+              <h3 class="student__name">Daniel Tapias Villamil</h3>
               <p class="student__role">Coder Riwi</p>
-              <a href="#" class="student__portfolio"
+              <a href="https://tapias00.github.io/portafalio_prueba/" class="student__portfolio" target="_blank">
+                Ver Portafolio
+              </a>
+            </div>
+          </article>
+
+          <article class="student__card">
+            <div class="student__image">
+              <img src="" alt="Foto Jerónimo Gutiérrez Arias"
+                onerror="this.src='../../src/assets/images/Tesla/Jeronimo Gutierrez Arias.jpg'">
+            </div>
+            <div class="student__info">
+              <h3 class="student__name">Jerónimo Gutiérrez Arias</h3>
+              <p class="student__role">Coder Riwi</p>
+              <a href="https://jerogutiar.github.io/PORTFOLIO/" class="student__portfolio" target="_blank">
+                Ver Portafolio
+              </a>
+            </div>
+          </article>
+
+          <article class="student__card">
+            <div class="student__image">
+              <img src="" alt="Foto Jerónimo Colorado Soto" onerror="this.src='../../src/assets/images/placeholder_image.svg'">
+            </div>
+            <div class="student__info">
+              <h3 class="student__name">Jerónimo Colorado Soto</h3>
+              <p class="student__role">Coder Riwi</p>
+              <a href="https://github.com/Crudzaso/portfolios/edit/main/pages/Tesla/Tesla.html" class="student__portfolio"
                 target="_blank">
                 Ver Portafolio
               </a>
             </div>
-          </article> -->
+          </article>
 
           <!--AGREGAR MÁS ESTUDIANTES-->
         </div>
@@ -313,7 +384,7 @@
       </div>
     </section>
   </footer>
-</body>
+  <script src="../../src/scripts/menu-hamburguer.js"></script>
 </body>
 
 </html>
